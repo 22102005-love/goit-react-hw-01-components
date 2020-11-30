@@ -1,0 +1,19 @@
+.friendItemWrapper {
+  display: flex;
+  align-items: center;
+}
+.stat {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+.avatar {
+  margin-right: 20px;
+  background-color: wheat;
+  border-radius: 20%;
+}
+.name {
+  font-size: 25px;
+  font-weight: 500;
+}

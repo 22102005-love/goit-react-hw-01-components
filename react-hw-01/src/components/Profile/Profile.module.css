@@ -1,0 +1,48 @@
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+}
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.avatar {
+  border-radius: 50%;
+  width: 180px;
+  height: auto;
+}
+.stats {
+  display: flex;
+  list-style: none;
+  width: 360px;
+  margin: 0;
+  padding: 0;
+  border: 2px solid;
+}
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 100px;
+  background-color: thistle;
+}
+.item:not(:nth-child(3n)) {
+  border-right: 2px solid;
+}
+.name {
+  font-size: 24px;
+  font-weight: bold;
+}
+.tag {
+  font-size: 20px;
+}
+.location {
+  font-size: 20px;
+}
