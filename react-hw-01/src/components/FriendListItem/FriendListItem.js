@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import s from './FriendListItem.module.css';
 const FriendListItem = ({ avatar, name, isOnline }) => {
   return (
-    <div className={s.friendItemWrapper}>
+    <li className={s.FriendListItem}>
       <span
         className={s.stat}
         style={{ backgroundColor: isOnline ? 'green' : 'red' }}
@@ -11,7 +11,7 @@ const FriendListItem = ({ avatar, name, isOnline }) => {
       </span>
       <img className={s.avatar} src={avatar} alt={name} width="55" />
       <p className={s.name}>{name}</p>
-    </div>
+    </li>
   );
 };
 FriendListItem.propType = {

@@ -1,6 +1,15 @@
-.friendItemWrapper {
+/* .friendItemWrapper {
   display: flex;
   align-items: center;
+} */
+.FriendListItem {
+  width: 400px;
+  height: 100px;
+  box-shadow: 10px 10px 5px 0 grey;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  margin-bottom: 20px;
 }
 .stat {
   width: 20px;
