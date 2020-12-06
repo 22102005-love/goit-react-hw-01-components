@@ -6,12 +6,14 @@ const Statistics = ({ title, stats }) => {
     <section className={s.statistics}>
       {title && <h2 className={s.title}>{title}</h2>}
       <ul className={s.list}>
-        {stats.map(stat => (
-          <li className={s.item} key={stat.id}>
-            <span className={s.label}>{stat.label}</span>
-            <span className={s.percentage}>{stat.percentage}%</span>
-          </li>
-        ))}
+        {stats?.length > 0
+          ? stats.map(stat => (
+              <li className={s.item} key={stat.id}>
+                <span className={s.label}>{stat.label}</span>
+                <span className={s.percentage}>{stat.percentage}%</span>
+              </li>
+            ))
+          : null}
       </ul>
     </section>
   );
@@ -19,7 +21,7 @@ const Statistics = ({ title, stats }) => {
 
 Statistics.propTypes = {
   title: PropTypes.string,
-  stats: PropTypes.array.isRequired,
+  stats: PropTypes.array,
 };
 
 export default Statistics;
